@@ -11,7 +11,7 @@
               <div class="inner">
                 <h3>{{$count}}</h3>
 
-                <p>Patient Registrations</p>
+                <p>Patients</p>
               </div>
               <div class="icon">
                 <i class="ion ion-person-add"></i>
@@ -26,12 +26,41 @@
               <div class="inner">
                 <h3>{{$count_details}}</h3>
 
-                <p>Checked up Patients</p>
+                <p>Todays Patient Visit</p>
               </div>
               <div class="icon">
                 <i class="ion ion-stats-bars"></i>
               </div>
               <a href="/patient/checkup" class="small-box-footer">Enter Patient Details <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-aqua">
+              <div class="inner">
+                <h3>{{$count_doctor}}</h3>
+
+                <p>Doctors</p>
+              </div>
+              <div class="icon">
+                <i class="ion ion-person"></i>
+              </div>
+              <a href="#" class="small-box-footer"> Register Doctor <i class="fa fa-arrow-circle-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-xs-6">
+            <!-- small box -->
+            <div class="small-box bg-red">
+              <div class="inner">
+                <h3>{{$todays_appointment_count}}</h3>
+
+                <p>Todays Appointment</p>
+              </div>
+              <div class="icon">
+                <i class="fa fa-file-text"></i>
+              </div>
+              <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
             </div>
           </div>
       </div>
@@ -65,14 +94,7 @@
             @endif
           @endforeach
             </tbody>
-            <tfoot>
-            <tr>
 
-                <th>Patient Name</th>
-                <th>Visit Date</th>
-                <th>Next Appointment</th>
-            </tr>
-            </tfoot>
           </table>
         </div>
         <!-- /.box-body -->
@@ -105,14 +127,7 @@
           @endif
         @endforeach
           </tbody>
-          <tfoot>
-          <tr>
 
-              <th>Patient Name</th>
-              <th>Visit Date</th>
-              <th>Today's Appointment</th>
-          </tr>
-          </tfoot>
         </table>
       </div>
       <!-- /.box-body -->

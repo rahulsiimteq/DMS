@@ -58,6 +58,10 @@
         </ul>
       </li> -->
       <li><a href="/patient/history"><i class="fa fa-calendar" id = "patient_history" ></i> <span>Patient History</span></a></li>
+      <li><a href="/patient/appointment"><i class="fa fa-calendar" id = "patient_history" ></i> <span>Appointments</span></a></li>
+      @role('Admin')
+      <li><a href="/users"><i class="fa fa-calendar" id = "patient_history" ></i> <span>Add User</span></a></li>
+      @endrole
     </ul>
     <!-- /.sidebar-menu -->
   </section>
