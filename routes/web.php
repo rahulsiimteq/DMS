@@ -39,8 +39,20 @@ Route::resource('PatientDetails','PatientDetailsController');
 //patient history page routes
 Route::get('/patient/history','PatientHistoryController@index');
 
+Route::resource('Appointment','AppointmentController');
+
+Route::get('/patient/appointment','AppointmentController@index');
+
 // Authentication Route
 Auth::routes();
 
 //Home Controller route
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::resource('users', 'UserController');
+
+Route::resource('roles', 'RoleController');
+
+Route::resource('permissions', 'PermissionController');
+
+Route::resource('posts', 'PostController');

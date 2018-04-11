@@ -13,14 +13,14 @@ class CreatePatientsTable extends Migration
      */
     public function up()
     {
-        Schema::create('patients', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('medicare_no')->unique();
-            $table->string('name');
-            $table->string('email')->unique();
-            $table->unsignedInteger('contact');
-            $table->timestamps();
-        });
+        // Schema::create('patients', function (Blueprint $table) {
+        //     $table->increments('id');
+        //     $table->string('medicare_no')->unique();
+        //     $table->string('name');
+        //     $table->string('email')->unique();
+        //     $table->unsignedInteger('contact');
+        //     $table->timestamps();
+        // });
     }
 
     /**
@@ -30,6 +30,6 @@ class CreatePatientsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('patients');
+        // Schema::dropIfExists('patients');
     }
 }

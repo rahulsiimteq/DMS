@@ -13,15 +13,15 @@ class CreatePatientDetailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('patient_details', function (Blueprint $table) {
-          $table->increments('id');
-          $table->string('medicare_no');
-          $table->string('name');
-          $table->longtext('details');
-          $table->unsignedInteger('doctor_id');
-          $table->string('report_file_path');
-          $table->timestamps();
-        });
+        // Schema::create('patient_details', function (Blueprint $table) {
+        //   $table->increments('id');
+        //   $table->string('medicare_no');
+        //   $table->string('name');
+        //   $table->longtext('details');
+        //   $table->unsignedInteger('doctor_id');
+        //   $table->string('report_file_path');
+        //   $table->timestamps();
+        // });
     }
 
     /**
@@ -31,6 +31,6 @@ class CreatePatientDetailsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('patient_details');
+        // Schema::dropIfExists('patient_details');
     }
 }
